@@ -220,7 +220,7 @@
       responseBox.scrollTop = responseBox.scrollHeight;
 
       try {
-        const res = await fetch("http://localhost:5678/webhook/trigger-agent", {
+        const res = await fetch("https://vmi2915475.contaboserver.net/webhook-test/trigger", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message })
@@ -248,3 +248,4 @@
   </script>
 </body>
 </html>
+
